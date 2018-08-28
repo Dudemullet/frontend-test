@@ -20,6 +20,10 @@ Events project
 
 ## TODO - wishlist
 
+- [] Modify date on the fly
+- [] Show future events
+- [] Show previous events?
+- [] Share via differente medium
 - [] Tests, ideally would come before implementation but time's critical here
 - [] Service worker for caching and PWA enhancements?
 - [] style guide - change style guide, livereload changes on page
