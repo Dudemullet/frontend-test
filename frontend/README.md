@@ -4,18 +4,18 @@ Events project
 ## TODO
 
 - [x] Eventlist functionality
-- [] Eventlist styling
 - [x] Routing
 - [] Share event route
 - [] Share event functionality
-- [] Share event styling
 - [] Add event detail view and route
 - [] Add event detail Component
-- [] Add event detail styling
 - [] Add higlighted events component
-- [] Add higlighted events styling
 - [] Add create event view and route
 - [] Add create event Component
+- [] Eventlist styling
+- [] Share event styling
+- [] Add event detail styling
+- [] Add higlighted events styling
 - [] Add create event styling
 
 ## TODO - wishlist
