@@ -15,9 +15,9 @@ const EventObj = (props, context) => {
         <a href="#">share</a>
         <p>{title}</p>
       </header>
-      <body>
+      <main>
         <img src={image} />
-      </body>
+      </main>
       <footer>
         <button>View</button>
       </footer>
