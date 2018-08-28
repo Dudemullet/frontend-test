@@ -9,7 +9,7 @@ const EventObj = (props, context) => {
   location,
   dates } = event;
 
-  return <div class="event-element-wrapper">
+  return <div className="event-element-wrapper">
       <header>
         <span>{dates[0]}</span>
         <a href="#">share</a>
