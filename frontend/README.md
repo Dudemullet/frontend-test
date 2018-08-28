@@ -3,9 +3,9 @@ Events project
 
 ## TODO
 
-- [] Eventlist functionality
+- [x] Eventlist functionality
 - [] Eventlist styling
-- [] Routing
+- [x] Routing
 - [] Share event route
 - [] Share event functionality
 - [] Share event styling
@@ -21,6 +21,7 @@ Events project
 ## TODO - wishlist
 
 - [] Tests, ideally would come before implementation but time's critical here
+- [] Service worker for caching and PWA enhancements?
 - [] style guide - change style guide, livereload changes on page
 - [] using flux ?
 
