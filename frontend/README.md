@@ -34,4 +34,5 @@ All in all, the biggest reason I'm using it is because it saves time by allowing
 - Live reload
 - bundling
 
-
+### NOTE #2 - Git Merges and commits
+I've normally worked with a rebase, merge request and squash based type workflow. I've intentionally made merges into master with the `--no-ff` flag turned on so my work process can be more easily scrutinized.
