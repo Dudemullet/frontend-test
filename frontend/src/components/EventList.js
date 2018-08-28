@@ -6,8 +6,8 @@ const EventList = (props, context) => {
 
   return <ul>
     {events.map( (event, i) => {
-      return <li>
-        <EventObj event={event} id={i} />
+      return <li key={i}>
+        <EventObj event={event} />
       </li>
     })}
   </ul>
