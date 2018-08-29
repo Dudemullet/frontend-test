@@ -1,5 +1,5 @@
 import React from 'react';
-import EventListContainer from '../components/EventListContainer';
+import EventListContainer from '../components/Events/EventListContainer';
 
 const Main = () => (
   <div>
