@@ -10,19 +10,32 @@ class ShareButton extends Component {
       showMenu: false
     }
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.handleOutsideClick = this.handleOutsideClick.bind(this);
   }
 
   toggleMenu(e) {
     e.preventDefault();
     this.setState(prevState => { 
+      if(prevState.showMenu) {
+        document.removeEventListener('mousedown', this.handleOutsideClick);
+      } else {
+        document.addEventListener('mousedown', this.handleOutsideClick);
+      }
       return { showMenu: !prevState.showMenu };
     });
+  }
+
+  handleOutsideClick(e) {
+    if(this.component.contains(e.target)) {
+      return null;
+    }
+    this.toggleMenu(e);
   }
 
   render() {
     const { showMenu } = this.state;
 
-    return <div className="shareButtonWrapper">
+    return <div ref={node => this.component = node} className="shareButtonWrapper">
       <a href="#" onClick={this.toggleMenu}>Share</a>
       {showMenu ? <ShareMenu message={this.state.message} /> : null }
     </div>
