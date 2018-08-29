@@ -1,14 +1,32 @@
-import React from 'react';
-import { default as Twitter } from './TwitterShareButton';
+import React, { Component } from 'react';
+import { default as ShareMenu } from './SharePopupMenu';
 
-const ShareButton = (props, context) => {
+class ShareButton extends Component {
 
-  const shareMsg = encodeURI(`I'm going to ${props.title} @ ${props.date}`);
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: `I'm going to ${props.title} @ ${props.date}`,
+      showMenu: false
+    }
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
 
-  return <div>
-    <a href="#">Share</a>
-    <Twitter msg={shareMsg} />
-  </div>
+  toggleMenu(e) {
+    e.preventDefault();
+    this.setState(prevState => { 
+      return { showMenu: !prevState.showMenu };
+    });
+  }
+
+  render() {
+    const { showMenu } = this.state;
+
+    return <div className="shareButtonWrapper">
+      <a href="#" onClick={this.toggleMenu}>Share</a>
+      {showMenu ? <ShareMenu message={this.state.message} /> : null }
+    </div>
+  }
 };
 
 export default ShareButton;
