@@ -1,24 +1,10 @@
 import React from 'react';
 import ShareButton from '../ShareButton/ShareButton';
-import { withRouter } from "react-router-dom";
-
-const ViewButton = withRouter(({ history }) => (
-  <button
-    type='button'
-    onClick={() => { history.push('/event/1') }}
-  >
-    Click Me!
-  </button>
-))
+import RedirectButton from './RedirectButton';
 
 const EventListItem = (props, context) => {
   const {event} = props
-  const { id,
-  title,
-  eventImage: image,
-  dates } = event;
-
-  const ViewBtn = withRouter(<ViewButton />);
+  const { id, title, eventImage: image, dates } = event; 
 
   return <div className="event-element-wrapper">
       <header>
@@ -30,7 +16,9 @@ const EventListItem = (props, context) => {
         <img src={image} />
       </main>
       <footer>
-        <ViewButton />
+        <RedirectButton route={`/event/${id}`}>
+          View
+        </RedirectButton>
       </footer>
     </div>;
 };
