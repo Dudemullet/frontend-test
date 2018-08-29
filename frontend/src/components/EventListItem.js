@@ -1,7 +1,7 @@
 import React from 'react';
 import ShareButton from './ShareButton/ShareButton';
 
-const EventObj = (props, context) => {
+const EventListItem = (props, context) => {
   const {event} = props
   const { id,
   title,
@@ -25,4 +25,4 @@ const EventObj = (props, context) => {
     </div>;
 };
 
-export default EventObj
+export default EventListItem;

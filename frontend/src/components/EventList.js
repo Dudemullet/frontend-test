@@ -1,5 +1,5 @@
 import React from 'react';
-import EventObj from './EventObj';
+import EventListItem from './EventListItem';
 
 const EventList = (props, context) => {
   const { events } = props;
@@ -7,7 +7,7 @@ const EventList = (props, context) => {
   return <ul>
     {events.map( (event, i) => {
       return <li key={i}>
-        <EventObj event={event} />
+        <EventListItem event={event} />
       </li>
     })}
   </ul>
