@@ -1,14 +1,10 @@
 import React from 'react';
-import ShareButton from './ShareButton/ShareButton';
+import ShareButton from '../ShareButton/ShareButton';
+import RedirectButton from './RedirectButton';
 
-const EventObj = (props, context) => {
+const EventListItem = (props, context) => {
   const {event} = props
-  const { id,
-  title,
-  eventImage: image,
-  description,
-  location,
-  dates } = event;
+  const { id, title, eventImage: image, dates } = event; 
 
   return <div className="event-element-wrapper">
       <header>
@@ -20,9 +16,11 @@ const EventObj = (props, context) => {
         <img src={image} />
       </main>
       <footer>
-        <button>View</button>
+        <RedirectButton route={`/event/${id}`}>
+          View
+        </RedirectButton>
       </footer>
     </div>;
 };
 
-export default EventObj
+export default EventListItem;

@@ -6,8 +6,8 @@ Events project
 - [x] Eventlist functionality
 - [x] Routing
 - [x] Share event functionality
-- [] Add event detail view and route
-- [] Add event detail Component
+- [x] Add event detail view and route
+- [x] Add event detail Component
 - [] Add higlighted events component
 - [] Add create event view and route
 - [] Add create event Component
