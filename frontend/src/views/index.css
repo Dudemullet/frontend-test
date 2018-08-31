@@ -1,0 +1,21 @@
+#root {
+  font-family: sans-serif;
+  color: #3a3a3a;
+}
+
+.app-header {
+  background-color: #3a3a3a;
+  color: #e3e3e3;
+  padding: 10px
+}
+
+.app-header-container > * {
+  display: inline;
+}
+
+.app-main-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px;
+}

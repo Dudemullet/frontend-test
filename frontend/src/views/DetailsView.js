@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import EventDetailsContainer from '../components/Events/EventDetailsContainer';
+import Header from '../components/Header';
 
 const DetailsView = ({ match }) => (
   <div>
-    <h1>
-      <Link to="/">Back</Link>
-      Events
-    </h1>
+    <Header linkHome="true" />
     <main>
       <EventDetailsContainer eventId={match.params.id} />
     </main>

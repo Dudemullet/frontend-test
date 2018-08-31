@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import CreateEventForm from '../components/Form/CreateEventForm';
+import Header from '../components/Header';
 
 class CreateView extends Component {
   constructor(props) {
@@ -12,10 +13,7 @@ class CreateView extends Component {
 
   render() {
     return <div>
-      <h1>
-        <Link to="/">Back</Link>
-        New Event
-        </h1>
+      <Header linkHome="true" label="New Event" />
       <main>
         <CreateEventForm onSubmit={this.sendTo} />
       </main>

@@ -6,6 +6,7 @@ import { default as Create } from './views/CreateView';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import 'reset-css';
+import './views/index.css';
 
 const App = () => {
   return <Router>
