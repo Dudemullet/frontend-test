@@ -8,11 +8,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => {
   return <Router>
-    <div>
+    <React.Fragment>
       <Route exact path="/" component={ Index } />
       <Route path="/event/:id" component={ Details } />
       <Route path="/create" component={ Create } />
-    </div>
+    </React.Fragment>
   </Router>
 }
 
