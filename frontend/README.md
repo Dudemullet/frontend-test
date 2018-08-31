@@ -27,6 +27,13 @@ Events project
 - [] Service worker for caching and PWA enhancements?
 - [] using flux ?
 
+## How to run 
+
+- Make sure backend is running
+- `npm install`
+- `npm run start`
+- Should be autoredirected, if not go to [http://localhost:8080/](http://localhost:8080/)
+
 ### NOTE - on tools used (Create react app)
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). I read the instructions and noticed how any types of frameworks/tools were permitted so I decided to bootstrap this project with CRA.
 
