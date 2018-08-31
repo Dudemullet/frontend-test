@@ -1,0 +1,9 @@
+.app-header {
+  background-color: #3a3a3a;
+  color: #e3e3e3;
+  padding: 10px
+}
+
+.app-header-container > * {
+  display: inline;
+}

@@ -4,6 +4,8 @@ import EventListContainer from '../components/Events/EventListContainer';
 import HighlightsContainer from '../components/Events/Highlights/HighlightsContainer';
 import Header from '../components/Header';
 
+import './index.css';
+
 const Main = () => (
   <React.Fragment>
     <Header />
