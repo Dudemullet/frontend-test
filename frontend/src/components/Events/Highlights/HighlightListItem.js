@@ -2,7 +2,7 @@ import React from 'react';
 
 const HighlightListItem = (props) => {
   const {event} = props
-  const { title, eventImage: image, dates } = event; 
+  const { title } = event; 
 
   return <div className="highlight-list-item">
       <p>{ title }</p>

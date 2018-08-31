@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import CreateEventForm from '../components/Form/CreateEventForm';
 import Header from '../components/Header';
 

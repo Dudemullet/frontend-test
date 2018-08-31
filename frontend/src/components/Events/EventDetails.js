@@ -12,7 +12,7 @@ const EventDetails = (props) => {
   return <div className="event-details-container">
 
     <section className="event-details-container-banner">
-      <img src={image} />
+      <img src={image} alt="movie poster" />
     </section>
 
     <section className="event-details-container-content">

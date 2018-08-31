@@ -36,7 +36,7 @@ class ShareButton extends Component {
     const { showMenu } = this.state;
 
     return <div ref={node => this.component = node} className="shareButtonWrapper">
-      <a href="#" onClick={this.toggleMenu}>Share</a>
+      <a href="" onClick={this.toggleMenu}>Share</a>
       {showMenu ? <ShareMenu message={this.state.message} /> : null }
     </div>
   }
