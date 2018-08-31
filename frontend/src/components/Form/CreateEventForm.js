@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import LabeledInput from './LabeledInput';
 import DateList from './DateList';
 
+import './CreateEventForm.css';
+
 class CreateEventForm extends Component{
   constructor(props) {
     super(props);
@@ -40,7 +42,7 @@ class CreateEventForm extends Component{
   }
 
   render() {
-    return <form action="http://localhost:3000/events" method="POST" encType="acppl" >
+    return <form action="http://localhost:3000/events" method="POST">
       <LabeledInput name="title" label="Título" />
       <LabeledInput name="description" label="Descripcion" />
       <LabeledInput name="location" label="Lugar" />

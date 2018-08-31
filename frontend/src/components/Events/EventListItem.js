@@ -8,14 +8,14 @@ const EventListItem = (props, context) => {
   const {event} = props
   const { id, title, eventImage: image, dates } = event; 
 
-  const divStyle = {
+  const bannerStyle = {
     backgroundImage: 'url(' + image + ')',
     backgroundSize: "cover",
   };
 
   return <div className="event-list-item-container">
 
-    <section className="event-list-item-banner" style={divStyle} >
+    <section className="event-list-item-banner" style={bannerStyle} >
     </section>
 
     <section className="event-list-item-content">
