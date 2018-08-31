@@ -5,6 +5,7 @@ import { default as Details } from './views/DetailsView';
 import { default as Create } from './views/CreateView';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import 'reset-css';
 
 const App = () => {
   return <Router>
