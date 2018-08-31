@@ -11,11 +11,11 @@ Events project
 - [x] Add higlighted events component
 - [x] Add create event view and route
 - [x] Add create event Component
-- [] Eventlist styling
-- [] Share event styling
-- [] Add event detail styling
-- [] Add higlighted events styling
-- [] Add create event styling
+- [x] Eventlist styling
+- [x] Share event styling
+- [x] Add event detail styling
+- [x] Add higlighted events styling
+- [x] Add create event styling
 
 ## TODO - wishlist
 
@@ -25,7 +25,6 @@ Events project
 - [] Share via differente medium
 - [] Tests, ideally would come before implementation but time's critical here
 - [] Service worker for caching and PWA enhancements?
-- [] style guide - change style guide, livereload changes on page
 - [] using flux ?
 
 ### NOTE - on tools used (Create react app)
@@ -36,6 +35,3 @@ All in all, the biggest reason I'm using it is because it saves time by allowing
 - Babel (es6 on browsers)
 - Live reload
 - bundling
-
-### NOTE #2 - Git Merges and commits
-I've normally worked with a rebase, merge request and squash based type workflow. I've intentionally made merges into master with the `--no-ff` flag turned on so my work process can be more easily scrutinized.
