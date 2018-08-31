@@ -6,6 +6,6 @@
 .app-main-grid {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
   padding: 10px;
 }
