@@ -9,8 +9,8 @@ Events project
 - [x] Add event detail view and route
 - [x] Add event detail Component
 - [x] Add higlighted events component
-- [] Add create event view and route
-- [] Add create event Component
+- [x] Add create event view and route
+- [x] Add create event Component
 - [] Eventlist styling
 - [] Share event styling
 - [] Add event detail styling
