@@ -1,0 +1,36 @@
+.event-list-item-container {
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.event-list-item-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-list-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-list-item-header .shareButtonWrapper {
+  display: inline;
+}
+
+.event-list-item-main {
+  font-size: 48px;
+  text-align: left;
+}
+
+.event-list-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-list-item-footer button{
+  font-size: 30px;
+}

@@ -1,0 +1,7 @@
+.event-list-container li:nth-child(odd){
+  background-color: #f9f9f9;
+}
+
+.event-list-container li {
+  margin: 30px;
+}
